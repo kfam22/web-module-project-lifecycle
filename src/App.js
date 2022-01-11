@@ -22,22 +22,16 @@ class App extends React.Component {
   
   render() {
     return(<div>
-      {/* header */}
-      <h1>Github Info</h1>
+      
+        <h1>Github Info</h1>
        
-       {/* form */}
-       <form>
+        <form>
          <input type='text'/>
          <button>Search</button>
-       </form>
+        </form>
 
-       {/* user component */}
-       <User user={dummyData.user}/>
-
-
-       {/* follower list: maps over each *follower arr from state and returns an image and user login*/}
-       <FollowerList />
-       
+        <User user={dummyData.user}/>
+        <FollowerList data={dummyData.followers} />
 
     </div>);
   }
