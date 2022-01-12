@@ -1,8 +1,9 @@
 import React from 'react';
 import User from './components/User';
 import FollowerList from './components/FollowerList';
-import axios from 'axios';
 import InputForm from './components/InputForm';
+import axios from 'axios';
+
 
 
 class App extends React.Component {
@@ -25,19 +26,20 @@ class App extends React.Component {
         });
       };
 
-      componentDidUpdate(prevProps, prevState){
+      componentDidUpdate(prevState){
         if(prevState.user !== this.state.user) {
           axios.get(`https://api.github.com/users/${this.state.user.login}/followers`)
           .then(res=>{
-            // console.log('did update:', res.data);
             this.setState({
               ...this.state,
               followers: res.data
             })
           })
+          .catch(err=>{
+            console.error(err);
+          });
         }
       }
-
 
       handleChange = (e) => {
         this.setState({
