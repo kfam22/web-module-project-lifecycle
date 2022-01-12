@@ -60,7 +60,7 @@ class App extends React.Component {
       };
 
   render() {
-    return(<div>
+    return(<div className='appContainer'>
         <div className='header'>
         <h1>Github Info</h1>
         <InputForm value={this.state.handle} handleChange={this.handleChange} handleSearch={this.handleSearch} />

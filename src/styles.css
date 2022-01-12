@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+   padding:0;
+   margin:0;
+   max-width:100%;   
+   text-transform: uppercase;
+}
+
+/* general styles */
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 3rem 9rem;
+    margin: 0 auto;
+    width: 50%;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* header styles */
+h1 {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+
+.form-container {
+    display: flex;
+}
+
+.searchBar {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: .7rem;
+    width: 500px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.searchBtn {
+    background-color: rgb(233, 135, 96);
+    color: black;
+    border: none;
+    padding: 1rem;
+    width: 120px;
+}
+
+
+/* user styles */
+.userContainer {
+    display: flex;
+    
+}
+
+.userContainer img{
+    margin: 1rem 2rem 2rem 0;
+}
+
+.userInfoContainer {
+    font-size: 1.5rem;
+    background-color: pink;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 300px;
+    width: 300px;
+
+}
+
+.userInfoContainer h2 {
+    /* text-decoration: underline; */
+    margin-top: 1rem;
+}
+
+.userInfoContainer h3 {
+    margin-bottom: 1rem;
+}
+
+/* followers styles*/
+
+.flist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+.follower {
+    margin: 1.4rem;
+    width: 13rem;
+}
+
